@@ -12,6 +12,9 @@ if (file.exists("clean_data/electric_consumption.csv")){
 	write.csv(electric_consumption, file = "clean_data/electric_consumption.csv")
 }
 
+data_location <- "clean_data/electric_consumption.csv"
+electric_consumption <- read.csv(data_location)
+
 # Create PNG image with project specifications
 png(filename='plots/plot4.png',width=480,height=480,units='px')
 
